@@ -10,7 +10,7 @@
  *
  * Return: (1) if the stack is full. (0) if otherwise.
  */
-void push(stack_t **head, char *data, unsigned int line_number)
+void push(stack_t **stack, char *data, unsigned int line_number)
 {
 	stack_t *newNode;
 	int num = atoi(data);
@@ -30,12 +30,12 @@ void push(stack_t **head, char *data, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 	newNode->n = num;
-	newNode->next = *head;
+	newNode->next = *stack;
 	newNode->prev = NULL;
-	if (*head != NULL)
+	if (*stack != NULL)
 	{
-		(*head)->prev = newNode;
+		(*stack)->prev = newNode;
 	}
-	*head = newNode;
+	*stack = newNode;
 }
 

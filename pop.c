@@ -7,19 +7,19 @@
  * Return: (1) in case of an error, otherwise it returns
  * the deleted element.
  */
-void pop(stack_t **head, unsigned int line_number)
+void pop(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp;
 
-	if (*head == NULL)
+	if (*stack == NULL)
 	{
 		fprintf("L%d: can't pop an empty stack\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 	else
 	{
-		temp = *head;
-		*head = (*head)->next;
+		temp = *stack;
+		*stack = (*stack)->next;
 		free(temp);
 	}
 }
