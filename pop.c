@@ -10,7 +10,6 @@
 void pop(stack_t **head, unsigned int line_number)
 {
 	stack_t *temp;
-	int value;
 
 	if (*head == NULL)
 	{
@@ -20,7 +19,6 @@ void pop(stack_t **head, unsigned int line_number)
 	else
 	{
 		temp = *head;
-		value = temp->n;
 		*head = (*head)->next;
 		free(temp);
 	}
