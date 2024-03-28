@@ -1,3 +1,5 @@
+#include "monty.h"
+
 /**
  * add - Adds the top two elements of stack.
  * @stack: Double pointer to stack

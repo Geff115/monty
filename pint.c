@@ -1,3 +1,5 @@
+#include "monty.h"
+
 /**
  * pint - Prints value at the top of stack
  * @stack: Double pointer to stack
