@@ -11,7 +11,6 @@
 void swap(stack **head, unsigned int line_number)
 {
 	stack_t *current, *temp;
-	int num1, num2;
 
 	current = *head;
 	if (current == NULL || current->next == NULL)
