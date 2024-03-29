@@ -25,6 +25,7 @@ int main(int argc, char *argv[])
 	char line[256], *opcode, *argument, *track;
 	FILE *file = fopen("file.m", "r");
 	if (argc < 2)
+
 	{
 		fprintf(stderr, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
@@ -49,7 +50,7 @@ int main(int argc, char *argv[])
 			{
 				found = 1;
 				if (strcmp(opcode, "push") == 0)
-					op_arr[i].f(&stack, line_number, argument);
+				op_arr[i].f(&stack, line_number, argument);
 				else
 					op_arr[i].f(&stack, line_number);
 			}
@@ -61,11 +62,10 @@ int main(int argc, char *argv[])
 		}
 	}
 	if (fclose(file) != 0)
-	{
+	{	
 		fprintf(stderr, "Failed to close file\n");
 		exit(EXIT_FAILURE);
 	}
 	while (*stack != NULL)
 		pop(stack);
 	return (0);
-}

@@ -2,7 +2,6 @@
 #define MONTY_H
 
 #include <stdio.h>
-#include <stderr.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
@@ -23,7 +22,7 @@ typedef struct instruction_s
 
 void push(stack_t **stack, char *data, unsigned int line_number);
 void pop(stack_t **stack, unsigned int line_number);
-void swap(stack **stack, unsigned int line_number);
+void swap(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);

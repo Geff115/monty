@@ -22,7 +22,7 @@ void push(stack_t **stack, char *data, unsigned int line_number)
 	}
 	else
 	{
-		newNode = malloc(sizeof(struct stack_t));
+		newNode = malloc(sizeof(stack_t));
 	}
 	if (newNode == NULL)
 	{
