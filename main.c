@@ -48,6 +48,8 @@ int main(int argc, char *argv[])
 	l_size = sizeof(line);
 	while (fgets(line, l_size, file) != NULL)
 	{
+		if (comment(line))
+			continue;
 		line[strcspn(line, "\n")] = 0;
 		line_number++;
 		opcode = strtok_r(line, " ", &track);
