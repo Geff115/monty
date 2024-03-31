@@ -5,7 +5,7 @@
  * second element in a stack.
  * @current: A pointer to the head of the stack.
  */
-void division(stack_t **stack, unsigned int line_number)
+void div_opcode(stack_t **stack, unsigned int line_number)
 {
 	stack_t *current;
 

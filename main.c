@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		{"nop", nop},
 		{"add", add},
 		{"sub", sub},
-		{"division", division},
+		{"div_opcode", div_opcode},
 		{"mul", mul},
 		{"mod", mod},
 	};
