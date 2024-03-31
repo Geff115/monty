@@ -21,6 +21,10 @@ int main(int argc, char *argv[])
 		{"pint", pint},
 		{"nop", nop},
 		{"add", add},
+		{"sub", sub},
+		{"division", division},
+		{"mul", mul},
+		{"mod", mod},
 	};
 	stack_t *stack = NULL;
 	unsigned int line_number = 0;
