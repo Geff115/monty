@@ -7,7 +7,7 @@
  */
 void div_opcode(stack_t **stack, unsigned int line_number)
 {
-	stack_t *current;
+	stack_t *current, *temp;
 
 	current = *stack;
 	if (current == NULL || current->next == NULL)
@@ -23,6 +23,12 @@ void div_opcode(stack_t **stack, unsigned int line_number)
 	else
 	{
 		current->next->n = current->next->n / current->n;
-		pop(stack, line_number);
+		if (current != NULL)
+		{
+			temp = current;
+			current = current->next;
+			*stack = current;
+			free(temp);
+		}
 	}
 }
