@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * mod - This function calculates the remainder when the 
+ * mod - This function calculates the remainder when the
  * top element of a stack is divided by the second
  * element in the stack.
  * @current: A pointer to the top element of the stack.
