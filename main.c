@@ -25,6 +25,7 @@ int main(int argc, char *argv[])
 		{"div_opcode", div_opcode},
 		{"mul", mul},
 		{"mod", mod},
+		{"pchar", pchar},
 	};
 	stack_t *stack = NULL;
 	unsigned int line_number = 0;
