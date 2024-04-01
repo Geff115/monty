@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
 		{"pchar", pchar},
 		{"pstr", pstr},
 		{"rotl", rotl},
+		{"rotr", rotr},
 	};
 	stack_t *stack = NULL;
 	unsigned int line_number = 0;
